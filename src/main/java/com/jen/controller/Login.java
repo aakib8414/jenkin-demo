@@ -19,7 +19,7 @@ public class Login {
     @PostMapping("/submit")
     public String submit(@RequestParam("username") String username,
                          @RequestParam("password") String password) {
-//        System.out.println("inside login page");
+        System.out.println("inside login page");
         if ("admin".equals(username) && "admin".equals(password)) {
             return "success"; // Redirect to success page
         } else {
